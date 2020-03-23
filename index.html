@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlyes.css">
+    <script src="snow.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--title favicon-->
+    <link rel="shortcut icon" href="snowgun.jpg" type="image/x-icon">
+  <title>Forever Winter</title>
+</head>
+<div id="snowflakeContainer">
+  <span class="snowflake"></span>
+</div>
+<header class="container-fluid">
+  <div class="col-12 text-center text-success">
+    <h1>Hey Powder Hounds</h1>
+    <h4>Cover the slopes with sweet fluffy pow pow</h4> 
+  </div>
+</header>
+<body class="container-fluid bg-dark">
+  <div class="row justify-content-end">
+    <img src="snowgun.jpg" alt="snowgun" class="snowgun mr-0" id="snowBlower" onclick="snowBlower()">
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="boosters">
+      <span><a id="SnowCat" class="bg-primary" onclick="clickUpgrade('SnowCat')">SnowCat booster will take 20 powder level</a></span>
+      <span class="bg-success">You have <span id="SnowCat-count" class="bg-success">0</span> boosters</span>
+      <span class="bg-success">You're snow level is boosted + <span id="SnowCat-booster" class="bg-success">0</span></span>
+      <br>
+      <span><a id="WaterTruck" class="bg-primary" onclick="clickUpgrade('WaterTruck')">WaterTruck booster will take 100 powder level</a></span>
+      <span class="bg-success">You have <span id="WaterTruck-count" class="bg-success">0</span> boosters</span>
+      <span class="bg-success">You're snow level is boosted + <span id="WaterTruck-booster" class="bg-success">0</span></span>
+      <br>
+      <span><a id="WaterSource" class="bg-primary" onclick="clickUpgrade('WaterSource')">WaterSource booster will take 150 powder level</a></span>
+      <span class="bg-success">You have <span id="WaterSource-count" class="bg-success">0</span> boosters</span>
+      <span class="bg-success">You're snow level is boosted + <span id="WaterSource-booster" class="bg-success">0</span></span>
+      <br>
+      <span><a id="SnowStorm" class="bg-primary" onclick="clickUpgrade('SnowStorm')">SnowStorm booster will take 600 powder level</a></span>
+      <span class="bg-success">You have <span id="SnowStorm-count" class="bg-success">0</span> boosters</span>
+      <span class="bg-success">You're snow level is boosted + <span id="SnowStorm-booster" class="bg-success">0</span></span>
+    </div>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Buy Boosters</button>  
+    <h2 class="text-success">Boost snow production</h2>
+    <h4 class="text-success">It'll cost ya some snow</h4>
+  </div>
+  <h2 class="col-12 text-center">Powder Level:
+    <span><span id="powder">0</span></span>
+  </h2>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
